@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E5B5E885-1DFE-4688-AAB8-453FDA56F58F}</ProjectGuid>
-    <RootNamespace>reverse_arr</RootNamespace>
+    <ProjectGuid>{9FE981C7-8F61-457C-814D-135AF5AF4462}</ProjectGuid>
+    <RootNamespace>mymine</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -65,7 +65,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="reversearr.c" />
+    <ClInclude Include="game.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="game.c" />
+    <ClCompile Include="test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
