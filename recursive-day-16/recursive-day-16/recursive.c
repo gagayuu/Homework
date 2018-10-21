@@ -1,6 +1,6 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-µİ¹é·½Ê½ÊµÏÖ´òÓ¡Ò»¸öÕûÊıµÄÃ¿Ò»Î» 
+é€’å½’æ–¹å¼å®ç°æ‰“å°ä¸€ä¸ªæ•´æ•°çš„æ¯ä¸€ä½ 
 void  print(int n){
 	if (n>0){
 		print(n / 10);
@@ -13,14 +13,14 @@ int main(){
 	print(n);
 	return 0;
 }
-µİ¹éºÍ·Çµİ¹é·Ö±ğÊµÏÖÇónµÄ½×³Ë
-int fac(int n){//µİ¹é
+é€’å½’å’Œéé€’å½’åˆ†åˆ«å®ç°æ±‚nçš„é˜¶ä¹˜
+int fac(int n){//é€’å½’
 	if (n <= 1)
 		return 1;
 	if (n > 1)
 		return n*fac(n - 1);
 }
-int fac(int n){//·Çµİ¹é
+int fac(int n){//éé€’å½’
 	int i = 0;
 	int f=1;
   if(n<=1)
@@ -38,8 +38,8 @@ int main(){
 	return 0;
 }
 
-µİ¹éºÍ·Çµİ¹é·Ö±ğÊµÏÖstrlen
-int strlen(char* str){  //·Çµİ¹é
+é€’å½’å’Œéé€’å½’åˆ†åˆ«å®ç°strlen
+int mystrlen(char* str){  //éé€’å½’
 	int count = 0;
 	while (*str != '\0'){
 		count += 1;
@@ -47,7 +47,7 @@ int strlen(char* str){  //·Çµİ¹é
 	}
 	return count;
 }
-int strlen(char* str){  //µİ¹é
+int mystrlen(char* str){  //é€’å½’
 	if (*str)
 		return 1+ strlen(str+1);
 	else
@@ -56,13 +56,13 @@ int strlen(char* str){  //µİ¹é
 
 int main(){
 	char str[] = "abcde";
-	int len = strlen(str);
+	int len = mystrlen(str);
 	printf("%d\n", len);
 	return 0;
 }
 
-±àĞ´Ò»¸öº¯Êıreverse_string(char * string)£¨µİ¹éÊµÏÖ£©
-½«²ÎÊı×Ö·û´®ÖĞµÄ×Ö·û·´ÏòÅÅÁĞ
+ç¼–å†™ä¸€ä¸ªå‡½æ•°reverse_string(char * string)ï¼ˆé€’å½’å®ç°ï¼‰
+å°†å‚æ•°å­—ç¬¦ä¸²ä¸­çš„å­—ç¬¦åå‘æ’åˆ—
 void reverse_string(char* str ){
 	if (*str != '\0'){
 		str++;
@@ -81,7 +81,7 @@ int main(){
 
 
 
-Ğ´Ò»¸öµİ¹éº¯ÊıDigitSum(n)£¬ÊäÈëÒ»¸ö·Ç¸ºÕûÊı£¬·µ»Ø×é³ÉËüµÄÊı×ÖÖ®ºÍ
+å†™ä¸€ä¸ªé€’å½’å‡½æ•°DigitSum(n)ï¼Œè¾“å…¥ä¸€ä¸ªéè´Ÿæ•´æ•°ï¼Œè¿”å›ç»„æˆå®ƒçš„æ•°å­—ä¹‹å’Œ
 int sum(int n){
 	if (n <= 9)
 		return n;
@@ -90,15 +90,15 @@ int sum(int n){
 }
 int main(){
 	int n = 0;
-	printf("ÊäÈëÒ»¸ö·Ç¸ºÕûÊı£º\n");
+	printf("è¾“å…¥ä¸€ä¸ªéè´Ÿæ•´æ•°ï¼š\n");
 	scanf("%d", &n);
-	printf("%dµÄÊı×ÖÖ®ºÍÎª%d \n", n, sum(n));
+	printf("%dçš„æ•°å­—ä¹‹å’Œä¸º%d \n", n, sum(n));
 	return 0;
 }
 
 
 
-±àĞ´Ò»¸öº¯ÊıÊµÏÖn^k£¬Ê¹ÓÃµİ¹éÊµÏÖ
+ç¼–å†™ä¸€ä¸ªå‡½æ•°å®ç°n^kï¼Œä½¿ç”¨é€’å½’å®ç°
 int fun(int n, int k){
 	if (k == 0)
 		return 1;
@@ -111,7 +111,7 @@ int fun(int n, int k){
 int main(){
 	int n = 0;
 	int k = 0;
-	printf("ÊäÈën,k\n");
+	printf("è¾“å…¥n,k\n");
 	scanf("%d,%d", &n,&k);
 	int res=fun(n, k);
 	printf("%d^%d=%d\n", n, k, res);
@@ -119,7 +119,7 @@ int main(){
 }
 
 
-µİ¹éºÍ·Çµİ¹é·Ö±ğÊµÏÖÇóµÚn¸öì³²¨ÄÇÆõÊı
+é€’å½’å’Œéé€’å½’åˆ†åˆ«å®ç°æ±‚ç¬¬nä¸ªæ–æ³¢é‚£å¥‘æ•°
 int fab(int n){
 	if (n <= 2)
 		return 1;
@@ -142,9 +142,9 @@ int fab(int n){
 
 int main(){
 	int n = 0;
-	printf("ÊäÈën£º\n");
+	printf("è¾“å…¥nï¼š\n");
 	scanf("%d", &n);
 	int s = fab(n);
-	printf("µÚ%d¸öfabÊıÊÇ%d\n", n, s);
+	printf("ç¬¬%dä¸ªfabæ•°æ˜¯%d\n", n, s);
 	return 0;
 }
