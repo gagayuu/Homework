@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Projectday11", "Projectday11\Projectday11.vcxproj", "{93F57437-4868-404B-B22F-22474E6B36EC}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "mymine", "..\mymine\Debug\mymine.exe", "{AA41767C-D1EE-47FA-A8DF-8F909052082D}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = D:\vscode\mymine\Debug\mymine.exe
+		RemoteMachine = DESKTOP-CGJGFIQ
+		StartingDirectory = D:\vscode\mymine\Debug
+		Environment = 默认值
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Debug|Win32.Build.0 = Debug|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Debug|x86.Build.0 = Debug|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Release|Win32.ActiveCfg = Release|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Release|Win32.Build.0 = Release|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Release|x86.ActiveCfg = Release|Win32
+		{93F57437-4868-404B-B22F-22474E6B36EC}.Release|x86.Build.0 = Release|Win32
+		{AA41767C-D1EE-47FA-A8DF-8F909052082D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AA41767C-D1EE-47FA-A8DF-8F909052082D}.Debug|Win32.ActiveCfg = Debug|x86
+		{AA41767C-D1EE-47FA-A8DF-8F909052082D}.Debug|x86.ActiveCfg = Debug|x86
+		{AA41767C-D1EE-47FA-A8DF-8F909052082D}.Release|Mixed Platforms.ActiveCfg = Debug|x86
+		{AA41767C-D1EE-47FA-A8DF-8F909052082D}.Release|Win32.ActiveCfg = Debug|x86
+		{AA41767C-D1EE-47FA-A8DF-8F909052082D}.Release|x86.ActiveCfg = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
