@@ -1,0 +1,98 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<assert.h>
+//编写函数
+//unsigned int reverse_bit(unsigned int value);
+//这个函数的返回值value的二进制位模式从左到右翻转后的值。
+//unsigned int reverse_bit(unsigned int value){
+//	int i = 0;
+//	int ret = 0;
+//	int bit = 0;
+//	for (i=0; i<32; i++){
+//		bit = (value >>i) & 1;
+//		ret += (bit << (31- i));
+//	}
+//	return ret;
+//}
+//int main(){
+//	unsigned int value = 0;
+//	scanf("%u", &value);
+//	printf("翻转后：%u\n",reverse_bit(value));
+//	return 0;
+//}
+
+
+
+//不使用（a+b）/2这种方式，求两个数的平均值
+//int main(){
+//	int a = 10;
+//	int b = 20;
+//	printf("%d\n", (a + b) >> 1);
+//	return 0;
+//}
+
+
+//一组数据中只有一个数字出现了一次。其他所有数字都是成对出现的。 
+//请找出这个数字。（使用位运算）
+//从头到尾依次异或数组中每一个数字，相同的数字抵消为0，最后剩下的数字是只出现一次的那个数字
+//异或遵循交换分配律，a^b^b^a=a^a^b^b; a^0=a; a^a=0;
+//int main(){
+//	int  arr[] = { 1, 2, 3, 1, 4, 5, 2, 5, 4 };   
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int i = 0;
+//	int ret = 0;
+//	for (i = 0; i < sz; i++){
+//		ret ^= arr[i];
+//	
+//	}
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+//有一个字符数组的内容为:"student a am i", 
+//请你将数组的内容改为"i am a student".
+//要求：
+//不能使用库函数。
+//只能开辟有限个空间（空间个数和字符串的长度无关）。
+//int my_strlen(const char *a){
+//	assert(a != NULL);
+//	int len = 0;
+//	while (*a != '\0'){
+//		len++;
+//		a++;
+//	}
+//	return len;
+//}
+//void reverse(char *a, int left, int right){
+//	while (left < right){
+//		int tmp = a[left];
+//		a[left] = a[right];
+//		a[right] = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//void reverse1(char *a){
+//	int i = 0;
+//	int left = 0;
+//	int right = my_strlen(a)-1;
+//	reverse(a, left, right);
+//	while (i< my_strlen(a)){
+//		left = i;
+//		while ((a[i] != ' ') && (a[i] != '\0')){
+//			i++;
+//		}
+//		right = i - 1;
+//		reverse(a, left, right); 
+//		i++;
+//	}
+//	
+}
+
+int main(){
+	char a[] = "student a am i";
+	printf("%s\n", a);
+	reverse1(a);
+	printf("翻转后;%s\n", a);
+}
