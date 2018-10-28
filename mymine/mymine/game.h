@@ -19,7 +19,7 @@ void FindMine(char mine[ROWS][COLS],char show[ROWS][COLS], int row, int col);
 int FindMineCount(char mine[ROWS][COLS], int x, int y);
 int IsWin(char show[ROWS][COLS],int row,int col);
 void SafeFirst(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col);
-int ExtendBoard(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col);
+void ExtendBoard(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col);
 
 #endif //__GAME_H_
 
